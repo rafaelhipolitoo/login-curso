@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Sarala', sans-serif;
+}
+
+body{
+    font-size: 100%;
+    background-color: #ff8302;
+}
+
+.navegacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.navegacao-imagem{
+    height: 100px;
+}
+
+.navegacao-menu{
+    display: flex;
+    gap: 32px;
+}
+
+.navegacao-menu a{
+    color: white;
+}
+
+.navegacao-menu-item:hover{
+    color: #001fbf;
+}
+
+.login{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px;
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    border-radius: 25px;
+}
+
+.formulario-login-imagem{
+    display: flex;
+    height: 100px;
+}
+
+.conteudo-principal-imagem{
+    height: 550px;
+}
+
+.input{
+    border: 0;
+    background-color: rgb(247, 242, 242);
+    border-radius: 5px;
+    height: 60px;
+}
+
+.button{
+    border: 0;
+    height: 100px;
+    border-radius: 20px;
+    background-color:#ff8302;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.button:hover{
+    color:white;
+    background-color: #001fbf;
+    cursor: pointer;
+}
+
+.a-link{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+.checkbox{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+}
+
+
