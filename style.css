@@ -66,6 +66,10 @@ body{
     height: 550px;
 }
 
+input{
+    padding: 0px 15px ;
+}
+
 .input{
     border: 0;
     background-color: rgb(247, 242, 242);
@@ -80,7 +84,7 @@ body{
     color: white;
     background-color:#ff8302;
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .button:hover{
