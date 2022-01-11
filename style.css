@@ -20,6 +20,7 @@ body{
     align-items: center;
     justify-content: space-around;
     padding: 10px;
+    height: 15vh;
 }
 
 .navegacao-imagem{
@@ -66,20 +67,18 @@ body{
     height: 550px;
 }
 
-input{
-    padding: 0px 15px ;
-}
 
 .input{
+    padding: 0px 15px ;
     border: 0;
     background-color: rgb(247, 242, 242);
     border-radius: 5px;
-    height: 60px;
+    height: 90px;
 }
 
 .button{
     border: 0;
-    height: 100px;
+    height: 200px;
     border-radius: 20px;
     color: white;
     background-color:#ff8302;
@@ -108,5 +107,37 @@ input{
     gap: 5px;
     font-size: 12px;
 }
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
+@media (max-width:999px) {
+
+   .form-login{
+    position: absolute;
+    gap: 10px;
+    padding: 40px;
+    background-color: white;
+    width: 380px;
+    height: 500px;
+    border-radius: 25px;
+}
+
+.navegacao{
+    justify-content: flex-start;
+}
+
+}
+
+
+
 
 
