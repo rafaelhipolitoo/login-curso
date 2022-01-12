@@ -1,127 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Sarala&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sarala&display=swap");
 
 /*RESET*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Sarala', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Sarala", sans-serif;
 }
 
-body{
-    font-size: 100%;
-    background-color: #ff8302;
+body {
+  font-size: 100%;
+  background-color: #ff8302;
 }
 
-.navegacao{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 10px;
-    height: 15vh;
+.navegacao {
+  background-color: #ff8302;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  height: 15vh;
 }
 
-.navegacao-imagem{
-    height: 100px;
+.navegacao-imagem {
+  height: 100px;
 }
 
-.navegacao-menu{
-    display: flex;
-    gap: 32px;
+.navegacao-menu {
+  display: flex;
+  gap: 32px;
 }
 
-.navegacao-menu a{
-    color: white;
+.navegacao-menu a {
+  color: white;
 }
 
-.navegacao-menu-item:hover{
-    color: #001fbf;
+.navegacao-menu-item:hover {
+  color: #001fbf;
 }
 
-.login{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+.login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.form-login{
+.form-login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 40px;
+  background-color: white;
+  width: 400px;
+  height: 500px;
+  border-radius: 25px;
+}
+
+.formulario-login-imagem {
+  display: flex;
+  height: 100px;
+}
+
+.conteudo-principal-imagem {
+  height: 550px;
+}
+
+.input {
+  padding: 0px 15px;
+  border: 0;
+  background-color: rgb(247, 242, 242);
+  border-radius: 5px;
+  height: 90px;
+}
+
+.button {
+  border: 0;
+  height: 100px;
+  border-radius: 20px;
+  color: white;
+  background-color: #ff8302;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.button:hover {
+  color: white;
+  background-color: #001fbf;
+  cursor: pointer;
+}
+
+.a-link {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+.checkbox {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 36px;
+  position: absolute;
+  right: 10px;
+  display: none;
+}
+
+@media (max-width: 700px) {
+
+  .navegacao nav{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 40px;
-    background-color: white;
-    width: 400px;
-    height: 500px;
-    border-radius: 25px;
-}
+    height: 50%;
+  }
 
-.formulario-login-imagem{
+  nav {
+    text-align: center;
+    margin: 0;
+    height: 0;
+  }
+
+  button {
     display: flex;
-    height: 100px;
-}
+  }
 
-.conteudo-principal-imagem{
-    height: 550px;
-}
+  nav a {
+    width: 100%;
+  }
 
-
-.input{
-    padding: 0px 15px ;
-    border: 0;
-    background-color: rgb(247, 242, 242);
-    border-radius: 5px;
-    height: 90px;
-}
-
-.button{
-    border: 0;
-    height: 100px;
-    border-radius: 20px;
-    color: white;
-    background-color:#ff8302;
-    margin-top: 20px;
-    font-size: 20px;
-}
-
-.button:hover{
-    color:white;
-    background-color: #001fbf;
-    cursor: pointer;
-}
-
-.a-link{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    justify-content: center;
-}
-
-.checkbox{
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
-    font-size: 12px;
-}
-
-.mobile-menu{
-    display: none;
-    cursor: pointer;
-}
-.mobile-menu div{
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-}
-
-@media (max-width:999px) {
-
-   .form-login{
+  .form-login {
     position: absolute;
     gap: 10px;
     padding: 40px;
@@ -129,25 +159,5 @@ body{
     width: 380px;
     height: 500px;
     border-radius: 25px;
+  }
 }
-
-.button{
-    border: 0;
-    height: 100px;
-    border-radius: 20px;
-    color: white;
-    background-color:#ff8302;
-    margin-top: 20px;
-    font-size: 20px;
-}
-
-.navegacao{
-    justify-content: flex-start;
-}
-
-}
-
-
-
-
-
